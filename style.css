@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    font-family: 'Secular One', sans-serif;
+}
+
+h1{
+    font-size: 250px;
+    background-color: transparent;
+}
+
+h2{
+    font-size: 280px;
+    background-color: transparent;
+}
+
+h3{
+    font-size: 160px;
+    background-color: transparent;
+    color: cadetblue;
+}
+
+h4{
+    font-size: 100px;
+    background-color: transparent;
+}
+
+.Firstsentence{
+    position: relative;
+    background: rgb(255, 255, 255);
+    margin:0;
+    padding:0;
+    height: 800px;
+}
+
+.Secondsentence{
+    position: relative;
+    background: white;
+    margin:0;
+    padding:0;
+    height: 800px;
+}
+
+
+.transition{
+    position: relative;
+    background-color: rgb(98, 201, 248);
+    height: 400px;
+}
+
+
+.container{
+    margin-top: 80px;
+    margin-left: 33%;
+    margin-right: 33%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.No{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+}
+
+.Man{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+}
+
+.Island{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    animation: textmoving 8s ease-in-out infinite;
+}
+
+.Entire{
+    color: rgba(95, 158, 160, 0.5);
+    height: 120px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    animation: textmoving 8s ease-in-out infinite;
+}
+
+@keyframes textmoving {
+    0%,100% {transform: translateY(0px);}
+    50% {transform: translateY(30px);}
+}
+
+.every{
+    color: rgb(109, 109, 109);
+    position: absolute;
+    margin-top: 80px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.part{
+    color: rgb(109, 109, 109);
+    position: absolute;
+    margin-top: 480px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.continent{
+    color: rgb(109, 109, 109);
+    position: absolute;
+    margin-top: 580px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.hidden{
+    color: white;
+    position: absolute;
+    padding-top: 60px;
+    font-size: 270px;
+    line-height: 80%;
+    transition: color 1s ease;
+}
+
+.iso{
+    visibility: visible;
+    color: black;
+}
+
+.hidden:hover{
+    color: rgb(221, 221, 221);
+}
+
+.continent:hover{
+    transform: scale(1.4);
+}
+
+
+.Waves {
+	position: absolute;
+	animation: animate 6s ease-in-out infinite;
+    background-color: rgba(3, 169, 244, 0.5);
+    height: 800px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+
+
+ .Waves2 {
+	position: absolute;
+	animation: animate2 6s ease-in-out infinite;
+    background-color: rgba(3, 169, 244, 0.25);
+    height: 800px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+
+ .Waves3 {
+	position: absolute;
+	animation: animate 8s ease-in-out infinite;
+    background-color:rgba(255, 255, 255, 0.75);
+    height: 400px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+
+ .Waves4 {
+	position: absolute;
+	animation: animate2 8s ease-in-out infinite;
+    background-color: rgba(255, 255, 255, 1);
+    height: 400px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 46%,
+			16% 44%,
+			33% 48%,
+			54% 52%,
+			70% 54%,
+			84% 52%,
+			100% 54%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 52%,
+			15% 54%,
+			34% 56%,
+			51% 54%,
+			67% 50%,
+			84% 44%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+@keyframes animate2 {
+	0%,
+	100% {
+        clip-path: polygon(
+			0% 52%,
+			15% 54%,
+			34% 56%,
+			51% 54%,
+			67% 50%,
+			84% 44%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 46%,
+			16% 44%,
+			33% 48%,
+			54% 52%,
+			70% 54%,
+			84% 52%,
+			100% 54%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+
